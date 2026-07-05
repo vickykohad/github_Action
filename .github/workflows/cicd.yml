@@ -1,0 +1,37 @@
+# this is the name of workflow that will be desplayed in the actin tab.
+name: CICD
+
+
+on:
+ workflow_dispatch: 
+
+jobs:
+
+ code:
+  runs-on: ubuntu-latest
+  steps:
+    - name: checkout code
+      run: echo "code clone from Github"
+      
+ build:
+   runs-on: ubuntu-latest
+   steps:
+    - name: Build Docker container
+      run: echo "Docker Container build"
+   
+  
+    
+ test:
+   runs-on: ubuntu-latest
+   steps:
+    - name: test the container
+      run: echo "Testing the container"
+      
+   deploy:
+     runs-on: ubuntu-latest
+     steps:
+      - name: Deploaying the app
+        run: echo "Docker compose deployed the app"
+   
+  
+ 
