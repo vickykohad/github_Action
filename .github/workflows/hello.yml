@@ -15,7 +15,7 @@ jobs:
  #this is the githubs runners
   runs-on: ubuntu-latest
   steps:
-    - name: say hello to users
+    - name: say hello to uSrs
       run : echo "Hello Dosto"
 
     - name: say hello to username
@@ -23,6 +23,6 @@ jobs:
  details:
   runs-on: ubuntu-latest
   steps:
-   - name:  show what is the version of python, docker, etc
+   - name:  show what is the docker of python, docker, etc
      run: docker --version && python --version
      
